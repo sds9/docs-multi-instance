@@ -22,7 +22,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'sds9-org', // Usually your GitHub org/user name.
+  organizationName: 'sds9', // Usually your GitHub org/user name.
   projectName: 'docs-multi-instance', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -48,7 +48,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sds9-org/docs-multi-instance/tree/main/',
+            'https://github.com/sds9/docs-multi-instance/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -59,7 +59,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sds9-org/docs-multi-instance/tree/main/',
+            'https://github.com/sds9/docs-multi-instance/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -80,7 +80,7 @@ const config: Config = {
         path: 'bravo',
         routeBasePath: 'bravo',
         sidebarPath: './sidebarsBravo.ts',
-        editUrl: 'https://github.com/sds9-org/docs-multi-instance/tree/main/',
+        editUrl: 'https://github.com/sds9/docs-multi-instance/tree/main/',
       },
     ],
   ],
@@ -121,7 +121,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/sds9-org/docs-multi-instance',
+          href: 'https://github.com/sds9/docs-multi-instance',
           label: 'GitHub',
           position: 'right',
         },
