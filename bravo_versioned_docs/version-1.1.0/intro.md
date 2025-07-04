@@ -2,15 +2,6 @@
 
 Welcome to the Bravo documentation! This is the documentation for the Bravo project.
 
-## What's New in Version 1.1.0
-
-🎉 **Latest Updates:**
-
-- Enhanced real-time processing capabilities
-- Improved event streaming performance
-- New webhook management features
-- Advanced monitoring and analytics
-
 ## Overview
 
 Bravo is a lightweight, fast, and efficient solution for:

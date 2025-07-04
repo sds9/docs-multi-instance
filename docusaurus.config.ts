@@ -102,11 +102,22 @@ const config: Config = {
           label: 'Alpha',
         },
         {
+          type: 'docsVersionDropdown',
+          position: 'left',
+          dropdownActiveClassDisabled: true,
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'bravoSidebar',
           docsPluginId: 'bravo',
           position: 'left',
           label: 'Bravo',
+        },
+        {
+          type: 'docsVersionDropdown',
+          docsPluginId: 'bravo',
+          position: 'left',
+          dropdownActiveClassDisabled: true,
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {

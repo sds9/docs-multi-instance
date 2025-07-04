@@ -2,15 +2,6 @@
 
 Welcome to the Alpha documentation! This is the main documentation instance for the Alpha project.
 
-## What's New in Version 1.1.0
-
-🚀 **Latest Features:**
-
-- Enhanced API performance and reliability
-- New TypeScript SDK with improved type safety
-- Advanced configuration management
-- Streamlined developer workflows
-
 ## Getting Started
 
 Alpha is a comprehensive platform that provides:
