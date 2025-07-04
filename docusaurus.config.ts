@@ -99,25 +99,36 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'alphaSidebar',
           position: 'left',
-          label: 'Alpha',
+          label: 'Alpha Docs',
         },
         {
           type: 'docsVersionDropdown',
           position: 'left',
+          dropdownItemsAfter: [{to: '/alpha/versions', label: 'All versions'}],
           dropdownActiveClassDisabled: true,
+        },
+        {
+          type: 'html',
+          value: '<div style="width: 1px; height: 20px; background-color: var(--ifm-color-emphasis-300); margin: 0 0.5rem;"></div>',
+          position: 'left',
         },
         {
           type: 'docSidebar',
           sidebarId: 'bravoSidebar',
           docsPluginId: 'bravo',
           position: 'left',
-          label: 'Bravo',
+          label: 'Bravo Docs',
         },
         {
           type: 'docsVersionDropdown',
           docsPluginId: 'bravo',
           position: 'left',
           dropdownActiveClassDisabled: true,
+        },
+        {
+          type: 'html',
+          value: '<div style="width: 1px; height: 20px; background-color: var(--ifm-color-emphasis-300); margin: 0 0.5rem;"></div>',
+          position: 'left',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
