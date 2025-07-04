@@ -1,0 +1,14 @@
+{
+  "alphaSidebar": [
+    "intro",
+    {
+      "type": "category",
+      "label": "API",
+      "items": [
+        "api/overview"
+      ]
+    },
+    "configuration",
+    "examples"
+  ]
+}
