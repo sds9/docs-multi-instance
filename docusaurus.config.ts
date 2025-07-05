@@ -102,6 +102,11 @@ const config: Config = {
           label: 'CDK Constructs',
         },
         {
+          type: 'docsVersionDropdown',
+          position: 'left',
+          dropdownActiveClassDisabled: true,
+        },
+        {
           type: 'html',
           value: '<div style="width: 1px; height: 20px; background-color: var(--ifm-color-emphasis-300); margin: 0 0.5rem;"></div>',
           position: 'left',
@@ -112,6 +117,12 @@ const config: Config = {
           docsPluginId: 'bravo',
           position: 'left',
           label: 'SDKs & Tools',
+        },
+        {
+          type: 'docsVersionDropdown',
+          docsPluginId: 'bravo',
+          position: 'left',
+          dropdownActiveClassDisabled: true,
         },
         {
           type: 'html',
