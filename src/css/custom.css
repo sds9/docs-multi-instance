@@ -1,30 +1,246 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Venmo Infrastructure Documentation - Custom Styling
+ * Using official Venmo brand colors for AWS infrastructure docs
  */
 
-/* You can override the default Infima variables here. */
+/* Official Venmo Brand Colors */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary Venmo Blue - Official color from brand.venmo.com */
+  --ifm-color-primary: #008CFF;
+  --ifm-color-primary-dark: #007DE6;
+  --ifm-color-primary-darker: #0075D9;
+  --ifm-color-primary-darkest: #0061B3;
+  --ifm-color-primary-light: #1A9BFF;
+  --ifm-color-primary-lighter: #33A6FF;
+  --ifm-color-primary-lightest: #66BBFF;
+  
+  /* Venmo Brand Colors */
+  --venmo-blue: #008CFF;
+  --venmo-blue-dark: #0061B3;
+  --venmo-blue-light: #66BBFF;
+  --venmo-green: #01ac66;
+  --venmo-navy: #1c3048;
+  --venmo-light-gray: #f7f8fa;
+  --venmo-medium-gray: #6c757d;
+  --venmo-dark-gray: #495057;
+  
+  /* AWS-themed colors */
+  --aws-orange: #FF9900;
+  --aws-dark-blue: #232F3E;
+  --aws-light-blue: #4B92DB;
+  
+  /* Typography optimized for infrastructure docs */
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'SF Mono', Monaco, 'Inconsolata', 'Roboto Mono', monospace;
+  
+  /* Code styling */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 140, 255, 0.1);
+  
+  /* Custom properties */
+  --ifm-navbar-height: 80px;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode adjustments */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #87bfdf;
+  --ifm-color-primary-dark: #6fb1da;
+  --ifm-color-primary-darker: #62a9d7;
+  --ifm-color-primary-darkest: #3d95ce;
+  --ifm-color-primary-light: #9fcde4;
+  --ifm-color-primary-lighter: #acd5e7;
+  --ifm-color-primary-lightest: #c6e1ed;
+  --docusaurus-highlighted-code-line-bg: rgba(135, 191, 223, 0.15);
+  
+  --ifm-navbar-background-color: var(--venmo-navy);
+  --ifm-background-color: #1a1d23;
+  --ifm-background-surface-color: #242830;
+}
+
+/* Navbar styling */
+.navbar {
+  padding: 1rem 0;
+  box-shadow: var(--ifm-navbar-shadow);
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--venmo-blue);
+}
+
+.navbar__logo {
+  height: 40px;
+  margin-right: 0.75rem;
+}
+
+/* Navigation links */
+.navbar__link {
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.navbar__link:hover {
+  background-color: var(--venmo-light-gray);
+  color: var(--venmo-blue-dark);
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  background-color: rgba(135, 191, 223, 0.1);
+  color: var(--ifm-color-primary-light);
+}
+
+/* Version dropdowns */
+.dropdown__menu {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.dropdown__link {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.dropdown__link:hover {
+  background-color: var(--venmo-light-gray);
+  color: var(--venmo-blue-dark);
+}
+
+/* Button styling */
+.button--primary {
+  background-color: var(--venmo-blue);
+  border-color: var(--venmo-blue);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.button--primary:hover {
+  background-color: var(--venmo-blue-dark);
+  border-color: var(--venmo-blue-dark);
+}
+
+.button--secondary {
+  color: var(--venmo-blue);
+  border-color: var(--venmo-blue);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Hero section styling */
+.hero {
+  background: linear-gradient(135deg, var(--venmo-blue) 0%, var(--venmo-blue-dark) 100%);
+  color: white;
+  padding: 4rem 0;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Admonitions */
+.admonition {
+  border-radius: 8px;
+  border-left-width: 4px;
+}
+
+.admonition-note {
+  border-color: var(--venmo-blue);
+}
+
+.admonition-tip {
+  border-color: var(--venmo-green);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--venmo-navy);
+  color: white;
+}
+
+.footer__title {
+  color: white;
+  font-weight: 600;
+}
+
+.footer__link-item {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--venmo-blue-light);
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* Sidebar */
+.theme-doc-sidebar-item-link {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.theme-doc-sidebar-item-link:hover {
+  background-color: var(--venmo-light-gray);
+}
+
+.theme-doc-sidebar-item-link-level-1.theme-doc-sidebar-item-link--active {
+  background-color: rgba(61, 149, 206, 0.1);
+  color: var(--venmo-blue-dark);
+  border-left: 3px solid var(--venmo-blue);
+}
+
+/* Table of contents */
+.table-of-contents__link {
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.table-of-contents__link:hover {
+  color: var(--venmo-blue);
+}
+
+.table-of-contents__link--active {
+  color: var(--venmo-blue-dark);
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .navbar__title {
+    font-size: 1.1rem;
+  }
 }

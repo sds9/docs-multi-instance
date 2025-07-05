@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Alpha Platform',
+    title: 'AWS CDK Constructs',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Alpha provides enterprise-grade features for developers with advanced
-        APIs, streamlined workflows, and robust security features.
+        Pre-built TypeScript CDK constructs for Venmo's AWS infrastructure.
+        Deploy secure, scalable services with battle-tested patterns and best practices.
       </>
     ),
   },
   {
-    title: 'Bravo Engine',
+    title: 'Infrastructure as Code',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Bravo is a high-performance, event-driven architecture platform for
-        real-time data processing and microservices communication.
+        Define your infrastructure using TypeScript with strong typing and IDE support.
+        Version control your infrastructure and collaborate with confidence.
       </>
     ),
   },
   {
-    title: 'Multi-Instance Docs',
+    title: 'Developer Experience',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Separate documentation instances allow for independent versioning and
-        lifecycle management while maintaining a unified developer experience.
+        Comprehensive documentation, examples, and tooling to accelerate your development.
+        Get started quickly with our CLI tools and template repositories.
       </>
     ),
   },

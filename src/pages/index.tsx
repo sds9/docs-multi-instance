@@ -21,12 +21,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/alpha/intro">
-            Alpha Documentation
+            CDK Constructs
           </Link>
           <Link
             className="button button--primary button--lg"
             to="/bravo/intro">
-            Bravo Documentation
+            SDKs & Tools
           </Link>
         </div>
       </div>
@@ -38,8 +38,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Venmo Infrastructure Documentation`}
+      description="AWS CDK constructs and infrastructure tools for Venmo's cloud platform. Build secure, scalable TypeScript infrastructure.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

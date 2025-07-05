@@ -1,34 +1,44 @@
-# Alpha Documentation
+# AWS CDK Constructs
 
-Welcome to the Alpha documentation! This is the main documentation instance for the Alpha project.
+Welcome to Venmo's AWS CDK Constructs documentation. Our TypeScript CDK constructs help you build secure, scalable infrastructure on AWS using proven patterns and best practices.
 
-## What's New in Version 1.1.0
+## What's New in Version 1.2.0
 
 🚀 **Latest Features:**
 
-- Enhanced API performance and reliability
-- New TypeScript SDK with improved type safety
-- Advanced configuration management
-- Streamlined developer workflows
+- New ECS Fargate construct with built-in autoscaling
+- Enhanced DynamoDB construct with encryption by default
+- Improved Lambda construct with X-Ray tracing enabled
+- Updated VPC construct with enhanced security groups
 
 ## Getting Started
 
-Alpha is a comprehensive platform that provides:
+Venmo's CDK constructs provide:
 
-- Advanced features for developers
-- Streamlined workflows
-- Enterprise-grade security
+- **Pre-built Components**: Battle-tested infrastructure patterns
+- **Type Safety**: Full TypeScript support with IDE integration
+- **Security by Default**: Built-in security best practices
+- **Operational Excellence**: Monitoring and logging included
 
 ## Quick Start
 
-To get started with Alpha:
+Install and use our CDK constructs:
 
-1. Install the Alpha CLI
-2. Configure your environment
-3. Create your first Alpha project
+```bash
+npm install @venmo/cdk-constructs
+```
+
+```typescript
+import { VenmoLambda, VenmoApiGateway } from '@venmo/cdk-constructs';
+
+const lambda = new VenmoLambda(this, 'MyFunction', {
+  functionName: 'my-service',
+  // Security and monitoring configured automatically
+});
+```
 
 ## Next Steps
 
-- Check out the [API Reference](./api/overview.md)
+- Check out the [Construct Reference](./api/overview.md)
 - Learn about [Configuration](./configuration.md)
 - Explore [Examples](./examples.md)

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Multi-Instance Docs',
-  tagline: 'Alpha and Bravo Documentation',
+  title: 'Infrastructure Docs',
+  tagline: 'AWS CDK modules and infrastructure documentation',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -89,23 +89,17 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Multi-Instance Docs',
+      title: 'Infrastructure',
       logo: {
-        alt: 'Documentation Logo',
-        src: 'img/logo.svg',
+        alt: 'Venmo Logo',
+        src: 'img/venmo-logo.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'alphaSidebar',
           position: 'left',
-          label: 'Alpha Docs',
-        },
-        {
-          type: 'docsVersionDropdown',
-          position: 'left',
-          dropdownItemsAfter: [{to: '/alpha/versions', label: 'All versions'}],
-          dropdownActiveClassDisabled: true,
+          label: 'CDK Constructs',
         },
         {
           type: 'html',
@@ -117,20 +111,14 @@ const config: Config = {
           sidebarId: 'bravoSidebar',
           docsPluginId: 'bravo',
           position: 'left',
-          label: 'Bravo Docs',
-        },
-        {
-          type: 'docsVersionDropdown',
-          docsPluginId: 'bravo',
-          position: 'left',
-          dropdownActiveClassDisabled: true,
+          label: 'SDKs & Tools',
         },
         {
           type: 'html',
           value: '<div style="width: 1px; height: 20px; background-color: var(--ifm-color-emphasis-300); margin: 0 0.5rem;"></div>',
           position: 'left',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Developer Blog', position: 'left'},
         {
           href: 'https://github.com/sds9/docs-multi-instance',
           label: 'GitHub',
@@ -142,32 +130,32 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Alpha Documentation',
+              label: 'API Reference',
               to: '/alpha/intro',
             },
             {
-              label: 'Bravo Documentation',
+              label: 'SDKs & Tools',
               to: '/bravo/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Developers',
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/venmo',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/venmo',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Twitter',
+              href: 'https://twitter.com/venmo',
             },
           ],
         },
@@ -175,17 +163,21 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: 'Developer Blog',
               to: '/blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/venmo',
+            },
+            {
+              label: 'Venmo.com',
+              href: 'https://venmo.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Venmo, a service of PayPal. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
